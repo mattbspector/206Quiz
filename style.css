@@ -1,0 +1,29 @@
+body{
+	margin:0;
+	padding: 0;
+}
+
+
+#page1{
+	width: 100%;
+	position: fixed;
+	background-color: green;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+
+#page2{
+	width: 100%;
+	position: fixed;
+	background-color: blue;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	display: none;
+}
+#page1 a{
+	margin: 0;
+	padding: 0;
+}
