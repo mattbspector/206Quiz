@@ -1,6 +1,8 @@
 body{
 	margin:0;
 	padding: 0;
+	font-family: 'Lato', sans-serif;
+	font-size:20px;
 }
 
 
@@ -12,6 +14,8 @@ body{
 	padding: 0;
 	height: 100%;
 	z-index: 10;
+	text-align:center;
+	background-image: url(background.jpg)
 }
 
 
@@ -24,6 +28,7 @@ body{
 	height: 100%;
 	position: fixed;
 	z-index: 9;
+	text-align:center;
 
 }
 
@@ -40,6 +45,19 @@ body{
 
 }
 
+#one {
+	text-align:center;
+	position:relative;
+	top:15%;
+
+}
+
+.formone{
+	border-radius: 25px;
+	width:20%;
+	height:10%;
+	text-decoration:none;
+}
 
 #page4{
 	width: 100%;
@@ -54,6 +72,7 @@ body{
 }
 
 #page1 a{
-	margin: 0;
-	padding: 0;
+	text-align:center;
+	position:absolute;
+	top:90%;
 }
