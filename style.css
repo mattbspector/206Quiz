@@ -11,6 +11,7 @@ body{
 	margin: 0;
 	padding: 0;
 	height: 100%;
+	z-index: 10;
 }
 
 
@@ -21,8 +22,37 @@ body{
 	margin: 0;
 	padding: 0;
 	height: 100%;
-	display: none;
+	position: fixed;
+	z-index: 9;
+
 }
+
+
+#page3{
+	width: 100%;
+	position: fixed;
+	background-color: red;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	position: fixed;
+	z-index: 8;
+
+}
+
+
+#page4{
+	width: 100%;
+	position: fixed;
+	background-color: yellow;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	position: fixed;
+	z-index: 7;
+
+}
+
 #page1 a{
 	margin: 0;
 	padding: 0;
