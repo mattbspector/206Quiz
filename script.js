@@ -3,9 +3,24 @@ $(document).ready(function(){
 
 
 
+
+
+
+
 	$(".nextbutton1").click(function(){
+
+	var firstboxval = $("#firstbox").val();
+	var secondboxval = $("#secondbox").val();
+	if(firstboxval != secondboxval)
+	{
+		alert("email's do not match!");
+	}
+
+	else
+	{
+
 		$("#page1").animate({width:'toggle'},1000);
-		
+	}
 
 
 	})
@@ -33,11 +48,6 @@ $(document).ready(function(){
 
 
 	})
-
-
-		
-
-
 
 });
 		
