@@ -1,6 +1,8 @@
 body{
 	margin:0;
 	padding: 0;
+	font-family: 'Lato', sans-serif;
+	font-size:20px;
 }
 
 
@@ -12,6 +14,13 @@ body{
 	padding: 0;
 	height: 100%;
 	z-index: 10;
+	text-align:center;
+	background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("background.jpg");
+	-o-background-size:100% 100%;
+	-webkit-background-size:100% 100%;
+	-moz-background-size:100% 100%;
+	background-size:100% 100%;
+	background-repeat: no-repeat;
 }
 
 
@@ -24,6 +33,14 @@ body{
 	height: 100%;
 	position: fixed;
 	z-index: 9;
+	text-align:center;
+		background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("saddog.jpg");
+	-o-background-size:100% 100%;
+	-webkit-background-size:100% 100%;
+	-moz-background-size:100% 100%;
+	background-size:100% 100%;
+	height:100%;
+	background-repeat: no-repeat;
 
 }
 
@@ -40,6 +57,19 @@ body{
 
 }
 
+#one {
+	text-align:center;
+	position:relative;
+	top:10%;
+
+}
+
+.formone{
+	border-radius: 25px;
+	width:20%;
+	height:10%;
+	text-decoration:none;
+}
 
 #page4{
 	width: 100%;
@@ -71,6 +101,7 @@ body{
 }
 
 #page1 a{
-	margin: 0;
-	padding: 0;
+	text-align:center;
+	position:absolute;
+	top:90%;
 }
