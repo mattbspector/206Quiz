@@ -60,15 +60,32 @@ body{
 #one {
 	text-align:center;
 	position:relative;
-	top:10%;
 
 }
 
 .formone{
-	border-radius: 25px;
-	width:20%;
-	height:10%;
+	width:40%;
+	height:50px;
 	text-decoration:none;
+	opacity:.7;
+	font-size:20px;
+	text-align:center;
+}
+
+.formone:focus {
+	opacity:1;
+	outline:none;
+}
+
+
+.formtwo {
+	position:absolute;
+	top:200px;
+}
+
+.formtwo:focus {
+	opacity:1;
+	outline:none;
 }
 
 #page4{
@@ -81,23 +98,6 @@ body{
 	position: fixed;
 	z-index: 7;
 
-}
-
-
-#page5{
-	width: 100%;
-	position: fixed;
-	background-color: grey;
-	margin: 0;
-	padding: 0;
-	height: 100%;
-	position: fixed;
-	z-index: 6;
-
-}
-#page5 img{
-	max-width: 400px;
-	max-height: 400px;
 }
 
 #page1 a{
