@@ -53,6 +53,23 @@ body{
 
 }
 
+
+#page5{
+	width: 100%;
+	position: fixed;
+	background-color: grey;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	position: fixed;
+	z-index: 6;
+
+}
+#page5 img{
+	max-width: 400px;
+	max-height: 400px;
+}
+
 #page1 a{
 	margin: 0;
 	padding: 0;
