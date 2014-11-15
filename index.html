@@ -9,82 +9,56 @@
 	</head>
 	<body>
 
-		<div id = "page1">
-			<h1>What Kind of Animal Are You?</h1>
-			<form id="one">
-				Enter Your First Name<br><input class="formone" type = "text" placeholder = "First Name" name = "firstName" required></input><br><br>
-				Enter Your Last Name<br><input class="formone"type = "text" placeholder = "Last Name" name = "lastName" required></input><br><br>
-				Enter Your Email Address<br><input class="formone" type="email" name="email" id = "firstbox"required placeholder="Enter a valid email address"><br><br>
-				Re-enter Your Email Address<br><input class="formone" type="email" name="email" id = "secondbox" required placeholder="Reenter Your Email Address"><br><br>
 
-				Select Your Class<br><select name="Year" required>
-				<option disabled selected>Select Class</option>
-				<option value="0">Freshman</option>
-				<option value="1">Sophomore</option>
-				<option value="2">Junior</option>
-				<option value="3">Senior</option>
-				</select>
-
-
-				
-			</form>
-			<a href = "#" class = "nextbutton1">sdfsdf</a>
-		</div>
-
-
-
-		<div id = "page2">
-
-
-			<form id = "color">
-				What is your favorite color?<br>
+		<form id="one" name = "first" method = "POST" action = "form.php">
+			<div id = "page2">
+					What is your favorite color?<br>
 					<input type="color" name="fav_color" value="#FF0000">
-				
-			</form>
-			<a href = "#" class = "nextbutton2">sdfsdf</a>
+					<a href = "#" class = "nextbutton2">sdfsdf</a>
 
-		</div>
+			</div>
 
 
-				<div id = "page3">
-
-
-			
-			<form id = "food">
+			<div id = "page3">
 				     What Food Do You Like The Most<br>
 					<input type="radio" name="fav_color" value="0">Steak<br>
 					<input type="radio" name="fav_color" value="1">Salad<br>
 					<input type="radio" name="fav_color" value="2">Mac n' Cheese<br>
 					<input type="radio" name="fav_color" value="3">Pizza
-				
-			</form>
-
-				
-			</form>
-			<a href = "#" class = "nextbutton3">sdfsdf</a>
-
-		</div>
+					<a href = "#" class = "nextbutton3">sdfsdf</a>
+			</div>
 
 
 			<div id = "page4">
-			<form id = "meat">
+					How much do you like eating meat?
+					 <input type = 'range' max = '10' min = '0'>
+					<a href = "#" class = "nextbutton4">sdfsdf</a>
 
-				How much do you like eating meat?
-			  <input type = 'range' max = '10' min = '0'>
-				
+			</div>
 
-				
-			</form>
-			<a href = "#" class = "nextbutton4">sdfsdf</a>
+			<div id = "page5">
+					<h1 class = "animal"></h1>
+					<img class = "aminalpic" src = "">
+			
+					Enter Your First Name<br><input class="formone" type = "text" placeholder = "First Name" name = "firstName" required></input><br><br>
+					Enter Your Last Name<br><input class="formone"type = "text" placeholder = "Last Name" name = "lastName" required></input><br><br>
+					Enter Your Email Address<br><input class="formone" type="email" name="email" id = "firstbox"required placeholder="Enter a valid email address"><br><br>
+					Re-enter Your Email Address<br><input class="formone" type="email" name="email" id = "secondbox" required placeholder="Reenter Your Email Address"><br><br>
 
-		</div>
-		<div id = "page5">
-			<h1 class = "animal"></h1>
-			<img class = "aminalpic" src = "">
-		</div>
+					Select Your Class<br>
+					<select name="Year" required>
+					<option disabled selected>Select Class</option>
+					<option value="0">Freshman</option>
+					<option value="1">Sophomore</option>
+					<option value="2">Junior</option>
+					<option value="3">Senior</option>
+					</select>
 
+					<input type = "submit" class = "nextbutton1">
+			
+			</div>
 
-
+		</form>
 	</body>	
 </html>
 
