@@ -2,29 +2,9 @@ $(document).ready(function(){
 
 	var totalscore = 0;
 	var finalcolor = "";
+	var animal = -1;
 
 
-	$("#one").submit(function(){
-
-			
-			var firstboxval = $("#firstbox").val();
-			var secondboxval = $("#secondbox").val();
-			if(firstboxval != secondboxval)
-			{
-				alert("email's do not match!");
-			}
-
-			
-			else
-			{
-
-				$("#page1").animate({width:'toggle'},1000);
-			}
-
-			return false;
-
-
-	});
 
 
 	$(".nextbutton2").click(function(){
@@ -50,6 +30,7 @@ $(document).ready(function(){
 		{	
 			$("#page5 .animal").text("YOU ARE A COW");
 			  $("#page5 img").attr("src", "all-about-cows-1.jpg");
+			
 
 			
 		}

@@ -2,47 +2,48 @@
 <html>
 	<head>
 		<title>Which Animal Are You?</title>
+		<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<script type="text/javascript" src = "JQuery.js"></script>
 		<script type="text/javascript" src = "script.js"></script>
-		<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
 	</head>
 	<body>
 
 
 		<form id="one" name = "first" method = "POST" action = "form.php">
 			<div id = "page2">
-					What is your favorite color?<br>
-					<input type="color" name="fav_color" value="#FF0000">
-					<a href = "#" class = "nextbutton2">sdfsdf</a>
+					<span id = "favcolor">What is your favorite color?<br><br>
+					<input type="color" name="fav_color" id = "fav" value="#FF0000"><br></span>
+					<a href = "#" class = "nextbutton2" id = "next">Next</a>
 
 			</div>
 
 
 			<div id = "page3">
 				     What Food Do You Like The Most<br>
-					<input type="radio" name="fav_color" value="0">Steak<br>
-					<input type="radio" name="fav_color" value="1">Salad<br>
-					<input type="radio" name="fav_color" value="2">Mac n' Cheese<br>
-					<input type="radio" name="fav_color" value="3">Pizza
-					<a href = "#" class = "nextbutton3">sdfsdf</a>
+					<input type="radio" name="fav_food" value="0">Pizza<br>
+					<input type="radio" name="fav_food" value="1">Salad<br>
+					<input type="radio" name="fav_food" value="2">Mac n' Cheese<br>
+					<input type="radio" name="fav_food" value="3">Steak
+					<a href = "#" class = "nextbutton3" id = "next">Next</a>
 			</div>
 
 
 			<div id = "page4">
 					How much do you like eating meat?
-					 <input type = 'range' max = '10' min = '0'>
-					<a href = "#" class = "nextbutton4">sdfsdf</a>
-
+					 <input type = 'range' name = "meat"max = '10' min = '0'>
+					<a href = "#" class = "nextbutton4" id = "next">Next</a>
 			</div>
 
 			<div id = "page5">
 					<h1 class = "animal"></h1>
-					<img class = "aminalpic" src = "">
+					<img class = "animalpic" src = ""><br><br>
 			
-					Enter Your First Name<br><input class="formone" type = "text" placeholder = "First Name" name = "firstName" required></input><br><br>
-					Enter Your Last Name<br><input class="formone"type = "text" placeholder = "Last Name" name = "lastName" required></input><br><br>
-					Enter Your Email Address<br><input class="formone" type="email" name="email" id = "firstbox"required placeholder="Enter a valid email address"><br><br>
+					Enter Your First Name<br><input class="formone" type = "text" placeholder = "First Name" name = "firstName" required></input><br>
+					Enter Your Last Name<br><input class="formone"type = "text" placeholder = "Last Name" name = "lastName" required></input><br>
+					Enter Your Email Address<br><input class="formone" type="email" name="email" id = "firstbox"required placeholder="Enter a valid email address"><br>
 					Re-enter Your Email Address<br><input class="formone" type="email" name="email" id = "secondbox" required placeholder="Reenter Your Email Address"><br><br>
 
 					Select Your Class<br>
@@ -52,9 +53,12 @@
 					<option value="1">Sophomore</option>
 					<option value="2">Junior</option>
 					<option value="3">Senior</option>
-					</select>
+					</select><br>
 
 					<input type = "submit" class = "nextbutton1">
+					<br>
+					<br>
+					<br>
 			
 			</div>
 
