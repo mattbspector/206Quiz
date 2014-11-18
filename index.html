@@ -7,47 +7,84 @@
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<script type="text/javascript" src = "JQuery.js"></script>
 		<script type="text/javascript" src = "script.js"></script>
+		<meta charset="UTF-8">
 
 	</head>
 	<body>
 
 
 		<form id="one" name = "first" method = "POST" action = "form.php">
+			<div id = "page1">
+					<h1>What Animal Are You!?</h1>
+					<a href = "#" class = "nextbutton1 next">Begin!</a>
+
+
+			</div>
 			<div id = "page2">
 					<span id = "favcolor">What is your favorite color?<br><br>
 					<input type="color" name="fav_color" id = "fav" value="#FF0000"><br></span>
-					<a href = "#" class = "nextbutton2" id = "next">Next</a>
+					<a href = "#" class = "nextbutton2 next">Next</a>
 
 			</div>
-
 
 			<div id = "page3">
-				     What Food Do You Like The Most<br>
-					<input type="radio" name="fav_food" value="0">Pizza<br>
-					<input type="radio" name="fav_food" value="1">Salad<br>
-					<input type="radio" name="fav_food" value="2">Mac n' Cheese<br>
-					<input type="radio" name="fav_food" value="3">Steak
-					<a href = "#" class = "nextbutton3" id = "next">Next</a>
-			</div>
+
+			<div class="pure-form">
+				    <h1>What Food Do You Like The Most?</h1><br>
+
+				    <div id = "pagecenter">
+							<input type="radio" name="fav_food" value="0" class = "pure-radio">Pizza<br>
+					
+							<input type="radio" name="fav_food" value="1" class = "pure-radio">Salad<br>
+					
+							<input type="radio" name="fav_food" value="2" class = "pure-radio">Mac n' Cheese<br>
+							<input type="radio" name="fav_food" value="3" class = "pure-radio">Steak<br>
+
+				
+					</div>
+						<br><br><a href = "#" class = "nextbutton3">NEXT</a><br><br>
+					</div>
+
+		</div>
 
 
 			<div id = "page4">
-					How much do you like eating meat?
-					 <input type = 'range' name = "meat"max = '10' min = '0'>
-					<a href = "#" class = "nextbutton4" id = "next">Next</a>
-			</div>
+
+
+		
+
+			<h1>How Much Do You Like Eating Meat?</h1>
+
+			<div id="page4center">
+			  <output name="amount" for="rangeInput"> VEGGIES</output>
+			  <input type = 'range' max = '10' min = '0' step = '1' name = "meat">
+			  <output name="amount" for="rangeInput"> MEAT</output>
+			  <div id = "meatloverz">
+
+			  	<img src="veggies.jpg" alt="vegetables!">
+			  	<img src="ronswanson.jpg" alt="I love meat">
+
+			  </div>
+
+		</div>
+
+			<br><a href = "#" class = "nextbutton4">NEXT</a><br><br>
+
+
+		</div>
 
 			<div id = "page5">
 					<h1 class = "animal"></h1>
-					<img class = "animalpic" src = ""><br><br>
+					<img class = "animalpic" src = "#" alt = "animal"><br><br>
 			
-					Enter Your First Name<br><input class="formone" type = "text" placeholder = "First Name" name = "firstName" required></input><br>
-					Enter Your Last Name<br><input class="formone"type = "text" placeholder = "Last Name" name = "lastName" required></input><br>
-					Enter Your Email Address<br><input class="formone" type="email" name="email" id = "firstbox"required placeholder="Enter a valid email address"><br>
+					<input type = "hidden" name = "hiddenone" value = "">
+					Enter Your First Name<br><input class="formone" type = "text" placeholder = "First Name" name = "firstName" required><br>
+					Enter Your Last Name<br><input class="formone" type = "text" placeholder = "Last Name" name = "lastName" required><br>
+					Enter Your Email Address<br><input class="formone" type="email" name="email" id = "firstbox" required placeholder="Enter a valid email address"><br>
 					Re-enter Your Email Address<br><input class="formone" type="email" name="email" id = "secondbox" required placeholder="Reenter Your Email Address"><br><br>
 
 					Select Your Class<br>
-					<select name="Year" required>
+					<select name="Year">
 					<option disabled selected>Select Class</option>
 					<option value="0">Freshman</option>
 					<option value="1">Sophomore</option>
@@ -55,7 +92,7 @@
 					<option value="3">Senior</option>
 					</select><br>
 
-					<input type = "submit" class = "nextbutton1">
+					<input type = "submit">
 					<br>
 					<br>
 					<br>

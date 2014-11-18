@@ -26,12 +26,18 @@ body{
         overflow: scroll;
 }
 
+#page1 h1{
+    font-size: 72px;
+    font-weight: 900;
+
+}
+
 .animal {
         text-align:center;
 }
 
-#next {
-        position:fixed;
+.next {
+        position: fixed;
         top:75%;
         text-decoration: none;
         left:46%;
@@ -80,17 +86,62 @@ body{
 
 
 #page3{
-        width: 100%;
+    width: 100%;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    position: fixed;
+    z-index: 8;
+    text-align: center;
+    background-image: url("foodbg.jpg");
+    overflow: scroll;
+}
 
-        background-color: red;
-        margin: 0;
-        padding: 0;
-        height: 100%;
-        position: fixed;
-        z-index: 8;
-        top:0;
-        overflow: scroll;
+#page3 h1 {
+    text-align: center;
+    font-family: arial;
+    color: white;
+    background-color: #DE3A12;
+    padding: 30px;
+}
 
+#pagecenter {
+    width: 80%;
+    background-color: white;
+    border: 1px solid #ACBBBF;
+    padding: 100px 4px;
+    margin: 0 auto;
+    opacity: 0.9;
+
+}
+
+.nextbutton3 {
+    background-color: #BD2424;
+    padding: 10px;
+    text-decoration: none;
+    opacity: 1.0;
+    color: white;
+    font-family: sans-serif;
+}
+.nextbutton3:hover {
+    background-color: #D8810A;
+    color: white;
+    opacity: 1.0;
+}
+
+label {
+    padding: 5px;
+    color: #222;
+    font-family: sans-serif;
+    font-size: 18px;
+    margin: 10px;
+}
+
+input [type="radio"]{
+    margin: 10px;
+    font-size: 20px;
+    vertical-align: middle;
 }
 
 #one {
@@ -125,18 +176,57 @@ body{
 }
 
 #page4{
-        width: 100%;
-        background-color: yellow;
-        margin: 0;
-        padding: 0;
-        height: 100%;
-        position: fixed;
-        z-index: 7;
-        top:0;
-        overflow: scroll;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    position: fixed;
+    z-index: 7;
+    text-align: center;
+    background-image: url("squirrel2.jpg");
+    overflow: scroll;
 
 }
 
+#page4 h1 {
+    text-align: center;
+    font-family: arial;
+    color: white;
+    background-color: #4D81FB;
+    padding: 30px;
+}
+
+.nextbutton4 {
+    background-color: #4D81FB;
+    padding: 7px;
+    text-decoration: none;
+    opacity: 1.0;
+    color: white;
+    font-family: sans-serif;
+}
+.nextbutton4:hover {
+    background-color: #17CA75;
+    color: white;
+    opacity: 1.0;
+}
+
+#page4center {
+    width: 80%;
+    background-color: white;
+    border: 1px solid #ACBBBF;
+    padding: 40px 30px;
+    margin: 0 auto;
+    opacity: 0.9;
+
+}
+
+@media only screen and (max-width: 1024px) {
+    #page4 img {
+        display: none;
+    }
+}
 
 #page5{
         width: 100%;
@@ -166,9 +256,16 @@ body{
 }
 #page1 a{
         text-align:center;
-        position:fixed;
-        top:90%;
+        font-size: 70px;
+        text-decoration: none;
+        color: #222;
 }
+
+#page1 a:hover{
+       
+        color: #FFF;
+}
+
 
 @media (max-width: 750px) {
   .animalpic {

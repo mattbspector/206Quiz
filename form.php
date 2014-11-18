@@ -33,6 +33,7 @@
 
 	$msg = "Hello " .$_POST["firstName"]. " ,\n";
 	$msg .= "Thank You For Completing Our Quiz!\n";	
+	$msg .= "You Are A  " .$_POST["hiddenone"]. "!". "\n";
 	$msg .= "Your favorite food is " . $food . "\n";	
 	$msg .= "On a Scale of 1-10 for your love of meat, You Chose  " . $meat . "!" . "\n";
 	$msg .= "We Hope You Visit Again Soon!\n" . "-Matt, Katie, and Christine";
@@ -42,7 +43,7 @@
 	$fileInfo="Email: " . $_POST["email"]. "\n";
 	$fileInfo.="Name: " . $_POST["firstName"] . " " . $_POST["lastName"].  "\n";
 	$fileInfo.="Favorite Food: " . $food . "\n";
-	$fileInfo.="Meat Scal: " . $meat . "\n";
+	$fileInfo.="Meat Scale: " . $meat . "\n";
 
 	fwrite($handle, $fileInfo);
 	fclose($handle); 
@@ -50,7 +51,7 @@
   echo '<body style = "text-align:center; background-color:#222; color:#FFF;">
 
 		<h1>Thank You For Taking Our Quiz!</h1>
-		<a href = "#"> Start Again!</a>
+		<a href = "http://mattspec.people.si.umich.edu/206Quiz"> Start Again!</a>
 	</body>	';
 
 
